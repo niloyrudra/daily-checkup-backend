@@ -57,8 +57,8 @@ app.post("/api/create-checkout-session", (req, res) => {
       quantity: quantity,
     }],
     mode: 'subscription',
-    success_url: 'https://daily-checkup.niloyrudra.com/success',
-    cancel_url: 'https://daily-checkup.niloyrudra.com/cancel',
+    success_url: 'https://DOMAIN.com/success',
+    cancel_url: 'https://DOMAIN.com/cancel',
   })
     .then(session => res.json({ success: true, url: session.url }))
     .catch(err => {
